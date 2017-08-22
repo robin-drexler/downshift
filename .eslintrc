@@ -11,6 +11,7 @@
     "func-style": "off",
     "no-eq-null": "off",
     "eqeqeq": "off",
-    "no-nested-ternary": "off"
+    "no-nested-ternary": "off",
+    "react/no-string-refs": "off",
   }
 }

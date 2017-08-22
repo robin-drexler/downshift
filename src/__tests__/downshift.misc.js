@@ -93,6 +93,16 @@ test('onChange only called when the selection changes', () => {
   expect(handleChange).toHaveBeenCalledTimes(0)
 })
 
+test('the instance properties are clean', () => {
+  const reference = setup().wrapper.instance()
+  expect({
+    root: Object.keys(reference),
+    state: Object.keys(reference.state),
+    actions: Object.keys(reference.actions),
+    propGetters: Object.keys(reference.propGetters),
+  }).toMatchSnapshot()
+})
+
 function setup({children = () => <div />, ...props} = {}) {
   let renderArg
   const childSpy = jest.fn(controllerArg => {
