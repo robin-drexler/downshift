@@ -14,6 +14,7 @@ import Apollo from './examples/apollo'
 import Axios from './examples/axios'
 import InstantSearch from './examples/react-instantsearch'
 import Popper from './examples/react-popper'
+import InputBug from './examples/input-bug'
 import ReactVirtualized from './examples/windowing-with-react-virtualized'
 import ReactTinyVirtualList from './examples/windowing-with-react-tiny-virtual-list'
 
@@ -23,6 +24,7 @@ function loadStories() {
 
   storiesOf('Examples', module)
     .add('basic', () => <Basic />)
+    .add('input-bug', () => <InputBug />)
     .add('dropdown', () => <Dropdown />)
     .add('form', () => <Form />)
     .add('controlled', () => <Controlled />)
